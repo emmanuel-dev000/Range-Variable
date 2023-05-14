@@ -4,12 +4,12 @@
     {
         /// <summary>
         /// Subtracts the deduct value to the current value.
-        /// The deduct value must be positive.
+        /// The deduct value must be positive, or else it will throw an exception.
         /// </summary>
         void DecreaseBy(T TParam);
 
         /// <summary>
-        /// Checks if it is decreasable by deduct value without returning an exception.
+        /// Checks if it is decreasable by deduct value before deducting, without returning an exception.
         /// </summary>
         bool TryDecreaseBy(T TParam, out T TResult);
 
@@ -20,12 +20,12 @@
     {
         /// <summary>
         /// Adds the additional value to the current value.
-        /// The additional value must be positive.
+        /// The additional value must be positive, or else it will throw an exception.
         /// </summary>
         void IncreaseBy(T TParam);
 
         /// <summary>
-        /// Checks if it is increasable by additional value without returning an exception.
+        /// Checks if it is increasable by additional value before adding, without returning an exception.
         /// </summary>
         bool TryIncreaseBy(T TParam, out T TResult);
 
