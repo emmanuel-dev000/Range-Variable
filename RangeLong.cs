@@ -75,7 +75,7 @@
 
         /// <inheritdoc/>
         /// <returns>Returns TRUE if it is decreasable, else FALSE.</returns>
-        public bool TryIncreasableBy(long additionalValue, out long result)
+        public bool TryIncreaseBy(long additionalValue, out long result)
         {
             result = Value;
             if (!IsIncreasableBy(additionalValue))

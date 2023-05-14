@@ -27,7 +27,7 @@
         /// <summary>
         /// Checks if it is increasable by additional value without returning an exception.
         /// </summary>
-        bool TryIncreasableBy(T TParam, out T TResult);
+        bool TryIncreaseBy(T TParam, out T TResult);
 
         bool IsIncreasableBy(T TParam);
     }
