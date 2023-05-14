@@ -6,6 +6,13 @@
         public float MaxValue { get; set; }
         public float Value { get; private set; }
 
+        public RangeFloat(float minValue, float maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+            Value = MinValue;
+        }
+
         /// <inheritdoc/>
         public void DecreaseBy(float deductValue)
         {

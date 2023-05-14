@@ -6,6 +6,13 @@
         public int MaxValue { get; set; }
         public int Value { get; private set; }
 
+        public RangeInt(int minValue, int maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+            Value = MinValue;
+        }
+
         /// <inheritdoc/>
         public void DecreaseBy(int deductValue)
         {

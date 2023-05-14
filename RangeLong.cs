@@ -6,6 +6,13 @@
         public long MaxValue { get; set; }
         public long Value { get; private set; }
 
+        public RangeLong(long minValue, long maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+            Value = MinValue;
+        }
+
         /// <inheritdoc/>
         public void DecreaseBy(long deductValue)
         {

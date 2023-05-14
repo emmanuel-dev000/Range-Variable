@@ -6,6 +6,13 @@
         public byte MaxValue { get; set; }
         public byte Value { get; private set; }
 
+        public RangeByte(byte minValue, byte maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+            Value = MinValue;
+        }
+
         /// <inheritdoc/>
         public void DecreaseBy(byte deductValue)
         {

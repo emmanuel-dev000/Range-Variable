@@ -6,6 +6,13 @@
         public double MaxValue { get; set; }
         public double Value { get; private set; }
 
+        public RangeDouble(double minValue, double maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+            Value = MinValue;
+        }
+
         /// <inheritdoc/>
         public void DecreaseBy(double deductValue)
         {
