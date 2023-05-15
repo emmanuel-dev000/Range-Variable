@@ -50,7 +50,7 @@
 
         public bool IsDecreasableBy(float deductValue)
         {
-            return (Value - deductValue) > MinValue;
+            return (Value - deductValue) >= MinValue;
         }
 
         /// <inheritdoc/>
@@ -90,7 +90,7 @@
 
         public bool IsIncreasableBy(float additionalValue)
         {
-            return (Value + additionalValue) < MaxValue;
+            return (Value + additionalValue) <= MaxValue;
         }
 
         public bool IsZeroOrNegative(float checkValue)
