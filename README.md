@@ -18,5 +18,5 @@ Or you can dowwnload this repository, and drag-n-drop these files to your projec
 
 Licensing:
 Pretty much you can do whatever you want with this repository.
-Your welcome to clone then add, edit/modify, or delete files to repository.
+You're welcome to clone then add, edit/modify, or delete files to repository.
 Creditting is also isn't mandatory.
